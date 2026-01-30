@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Shadow Dodge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MENÚ PRINCIPAL -->
+<div id="menu">
+  <h1>Shadow Dodge</h1>
+  <button onclick="startGame()">Jugar</button>
+</div>
+
+<!-- HUD -->
+<div id="hud">
+  <span>Puntos: <span id="score">0</span></span>
+  <span>Mejor: <span id="highScore">0</span></span>
+  <span>Nivel: <span id="level">1</span></span>
+</div>
+
+<!-- BOTONES -->
+<button id="pauseBtn" onclick="togglePause()">⏸</button>
+<button id="soundBtn" onclick="toggleSound()">🔊</button>
+
+<!-- MENÚ PAUSA -->
+<div id="pauseMenu">
+  <h2>Pausa</h2>
+  <button onclick="resumeGame()">Continuar</button>
+</div>
+
+<!-- MENSAJE DE NIVEL -->
+<div id="levelMsg"></div>
+
+<canvas id="gameCanvas"></canvas>
+
+<script src="game.js"></script>
+</body>
+</html>

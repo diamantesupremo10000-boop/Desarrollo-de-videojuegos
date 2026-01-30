@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: black;
+  overflow: hidden;
+  touch-action: none;
+}
+
+canvas {
+  display: block;
+}
+
+#menu, #pauseMenu {
+  position: fixed;
+  inset: 0;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+#pauseMenu {
+  display: none;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+#hud {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  display: flex;
+  gap: 15px;
+  z-index: 5;
+}
+
+#pauseBtn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 5;
+}
+
+#soundBtn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 5;
+}
+
+#levelMsg {
+  position: fixed;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 6;
+}
